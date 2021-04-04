@@ -32,16 +32,12 @@ namespace :adwords_api do
       puts 'Please restart the script now.'
     end
   rescue => exception
-    Rails.logger.error exception.inspect
+    Rails.logger.error exception
   end
 
   desc 'Import Campaigns and AdGroups into database'
   task import: :environment do
-    begin
-      ImportWorker.perform_later
-    rescue => exception
-      Rails.logger.error exception.inspect
-    end
+    ImportWorker.perform_later
   end
 
   desc 'Process AdWords data'
@@ -72,6 +68,6 @@ namespace :adwords_api do
 
     Rails.logger.info "Mean number of AdGroups per Campaign: #{stats[:nb_ad_groups]/stats[:nb_campaigns]}"
   rescue => exception
-    Rails.logger.error exception.inspect
+    Rails.logger.error exception
   end
 end
