@@ -201,7 +201,7 @@ GEM
     redis-store (1.9.0)
       redis (>= 4, < 5)
     ruby2_keywords (0.0.4)
-    sidekiq (6.2.0)
+    sidekiq (6.1.2)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
@@ -254,7 +254,7 @@ DEPENDENCIES
   redis
   redis-rack-cache
   redis-rails
-  sidekiq
+  sidekiq (= 6.1.2)
   signet (= 0.12.0)
   sinatra
   spring

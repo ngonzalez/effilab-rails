@@ -1,5 +1,5 @@
 class AdwordsApiImport < ApplicationJob
-  queue_as :default
+  include Sidekiq::Worker
 
   # Basic Operations Samples
   # https://developers.google.com/adwords/api/docs/samples/ruby/basic-operations

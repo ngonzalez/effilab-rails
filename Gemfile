@@ -41,7 +41,7 @@ gem 'redis-rack-cache'
 gem 'rake'
 
 # Sidekiq
-gem 'sidekiq'
+gem 'sidekiq', '6.1.2'
 gem 'sinatra', require: nil
 
 # Google Adwords API
