@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_04_04_090914) do
     t.text "status"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["adwords_id", "name"], name: "index_ad_groups_on_adwords_id_and_name", unique: true
+    t.index ["adwords_id"], name: "index_ad_groups_on_adwords_id"
     t.index ["campaign_id"], name: "index_ad_groups_on_campaign_id"
   end
 
@@ -35,14 +35,14 @@ ActiveRecord::Schema.define(version: 2021_04_04_090914) do
     t.datetime "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["adwords_id", "name"], name: "index_campaigns_on_adwords_id_and_name", unique: true
+    t.index ["adwords_id"], name: "index_campaigns_on_adwords_id"
   end
 
   create_table "configs", force: :cascade do |t|
     t.text "name"
     t.integer "record_id"
     t.text "record_type"
-    t.text "data"
+    t.json "data"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["record_id", "record_type"], name: "index_configs_on_record_id_and_record_type"
