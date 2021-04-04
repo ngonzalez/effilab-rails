@@ -12,6 +12,7 @@ PostgreSQL version 13.0
 
 * Configuration
 Edit `.env` file at the root of the application
+Recommended use is to rename `.env.sample` file
 
 * Database creation
 `bundle exec rails db:create`
