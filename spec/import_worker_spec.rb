@@ -5,7 +5,7 @@ require 'sidekiq/testing'
 Sidekiq::Testing.fake!
 
 RSpec.describe ImportWorker, type: :worker do
-  let(:adwords) { AdwordsApi::Api.new(File.join(Rails.root, 'spec', 'adwords_api.yml')) }
+  let(:adwords) { AdwordsApi::Api.new(File.join(Rails.root, 'spec', 'fixtures', 'adwords_api.yml')) }
   describe 'testing worker' do
     it 'jobs are sent to default queue' do
       described_class.perform_async
