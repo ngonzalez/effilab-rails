@@ -9,7 +9,7 @@ class CreateCampaigns < ActiveRecord::Migration[6.1]
       t.datetime :end_date
       t.datetime :created_at
       t.datetime :updated_at
-      t.index [:adwords_id], name: :index_campaigns_on_adwords_id
+      t.index [:adwords_id], name: :index_campaigns_on_adwords_id, unique: true
     end
   end
 end
