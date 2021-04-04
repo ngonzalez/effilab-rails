@@ -31,6 +31,8 @@ namespace :adwords_api do
       puts 'OAuth2 token is now saved and will be automatically used by the library.'
       puts 'Please restart the script now.'
     end
+  rescue => exception
+    Rails.logger.error exception.inspect
   end
 
   desc 'Import Campaigns and AdGroups into database'
@@ -138,6 +140,8 @@ namespace :adwords_api do
     Campaign.find_each do |campaign|
       get_ad_groups(campaign.id)
     end
+  rescue => exception
+    Rails.logger.error exception.inspect
   end
 
   desc 'Process AdWords data'
@@ -148,7 +152,7 @@ namespace :adwords_api do
       nb_adg = campaign.adgroups.count
       stats[:nb_ad_groups] += nb_adg
 
-      @logger.info "Campaign: %{id} \"%{name}\" [%{status}] AdGroups:%{nb_adg}" % {
+      Rails.logger.info "Campaign: %{id} \"%{name}\" [%{status}] AdGroups:%{nb_adg}" % {
         id: campaign.adwords_id,
         name: campaign.name,
         status: campaign.status,
@@ -156,7 +160,7 @@ namespace :adwords_api do
       }
 
       campaign.adgroups.each do |adgroup|
-        @logger.info "Adgroup: %{id} \"%{name}\" [%{status}]" % {
+        Rails.logger.info "Adgroup: %{id} \"%{name}\" [%{status}]" % {
           id: adgroup.adwords_id,
           name: adgroup.name,
           status: adgroup.status,
@@ -166,6 +170,8 @@ namespace :adwords_api do
 
     return unless Campaign.any?
 
-    @logger.info "Mean number of AdGroups per Campaign: #{stats[:nb_ad_groups]/stats[:nb_campaigns]}"
+    Rails.logger.info "Mean number of AdGroups per Campaign: #{stats[:nb_ad_groups]/stats[:nb_campaigns]}"
+  rescue => exception
+    Rails.logger.error exception.inspect
   end
 end
