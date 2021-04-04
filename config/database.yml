@@ -13,7 +13,4 @@ test:
 
 development:
   <<: *local-defaults
-  database: <%= POSTGRESQL_DB %>-development
-
-production:
-  <<: *local-defaults
+  database: <%= POSTGRESQL_DB %>
