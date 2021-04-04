@@ -135,18 +135,21 @@ namespace :adwords_api do
 
     Campaign.find_each do |campaign|
       nb_adg = campaign.adgroups.count
-      values = {
+      stats[:nb_ad_groups] += nb_adg
+
+      @logger.info "Campaign: %{id} \"%{name}\" [%{status}] AdGroups:%{nb_adg}" % {
         id: campaign.adwords_id,
         name: campaign.name,
         status: campaign.status,
         nb_adg: nb_adg,
       }
-      stats[:nb_ad_groups] += nb_adg
-
-      @logger.info "Campaign: %{id} \"%{name}\" [%{status}] AdGroups:%{nb_adg}" % values
 
       campaign.adgroups.each do |adgroup|
-        @logger.info "Adgroup: %{id} \"%{name}\" [%{status}]" % { id: adgroup.adwords_id, name: adgroup.name, status: adgroup.status }
+        @logger.info "Adgroup: %{id} \"%{name}\" [%{status}]" % {
+          id: adgroup.adwords_id,
+          name: adgroup.name,
+          status: adgroup.status,
+        }
       end
     end
 
