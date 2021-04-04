@@ -7,6 +7,8 @@ PAGE_SIZE = 500
 namespace :adwords_api do
   desc 'Setup Adwords API configuration file'
   task setup: :environment do
+    # AdwordsApi::Api will read a config file from ENV['HOME']/adwords_api.yml
+    # when called without parameters.
     @adwords = AdwordsApi::Api.new
 
     # To enable logging of SOAP requests, set the log_level value to 'DEBUG' in
@@ -33,13 +35,16 @@ namespace :adwords_api do
 
   desc 'Import Campaigns and AdGroups into database'
   task import: :environment do
-    # Basic Operations Samples
-    # https://developers.google.com/adwords/api/docs/samples/ruby/basic-operations
+    # AdwordsApi::Api will read a config file from ENV['HOME']/adwords_api.yml
+    # when called without parameters.
     @adwords = AdwordsApi::Api.new
 
     # To enable logging of SOAP requests, set the log_level value to 'DEBUG' in
     # the configuration file or provide your own logger:
     @adwords.logger = ActiveSupport::Logger.new(ENV['LOG_FILE_PATH'])
+
+    # Basic Operations Samples
+    # https://developers.google.com/adwords/api/docs/samples/ruby/basic-operations
 
     def get_campaigns
       campaign_srv = @adwords.service(:CampaignService, API_VERSION)
@@ -52,7 +57,7 @@ namespace :adwords_api do
         ],
         :paging => {
           :start_index => 0,
-          :number_results => PAGE_SIZE
+          :number_results => PAGE_SIZE,
         }
       }
 
@@ -63,16 +68,17 @@ namespace :adwords_api do
         page = campaign_srv.get(selector)
         if page[:entries]
           page[:entries].each do |campaign|
-            # New transaction
-            Campaign.new do |cp|
-              cp.adwords_id = campaign[:id]
-              cp.name = campaign[:name]
-              cp.status = campaign[:status]
-              cp.serving_status = campaign[:serving_status]
-              cp.start_date = campaign[:start_date]
-              cp.end_date = campaign[:end_date]
-              cp.save
-              cp.create_conf(data: JSON.dump(campaign[:settings]))
+            ActiveRecord::Base.transaction do
+              Campaign.new do |cp|
+                cp.adwords_id = campaign[:id]
+                cp.name = campaign[:name]
+                cp.status = campaign[:status]
+                cp.serving_status = campaign[:serving_status]
+                cp.start_date = campaign[:start_date]
+                cp.end_date = campaign[:end_date]
+                cp.save!
+                cp.create_conf!(data: JSON.dump(campaign[:settings]))
+              end
             end
           end
           # Increment values to request the next page.
@@ -85,7 +91,6 @@ namespace :adwords_api do
     end
 
     def get_ad_groups(campaign_id)
-
       ad_group_srv = @adwords.service(:AdGroupService, API_VERSION)
 
       # Get all the ad groups for this campaign.
@@ -97,7 +102,7 @@ namespace :adwords_api do
         ],
         :paging => {
           :start_index => 0,
-          :number_results => PAGE_SIZE
+          :number_results => PAGE_SIZE,
         }
       }
 
@@ -108,14 +113,15 @@ namespace :adwords_api do
         page = ad_group_srv.get(selector)
         if page[:entries]
           page[:entries].each do |ad_group|
-            # New transaction
-            Adgroup.new do |ag|
-              ag.adwords_id = ad_group[:id]
-              ag.campaign = Campaign.find_by(adwords_id: campaign_id)
-              ag.name = ad_group[:name]
-              ag.status = ad_group[:status]
-              ag.save
-              ag.create_conf(data: JSON.dump(ad_group[:settings]))
+            ActiveRecord::Base.transaction do
+              Adgroup.new do |ag|
+                ag.adwords_id = ad_group[:id]
+                ag.campaign_id = campaign_id
+                ag.name = ad_group[:name]
+                ag.status = ad_group[:status]
+                ag.save!
+                ag.create_conf!(data: JSON.dump(ad_group[:settings]))
+              end
             end
           end
           # Increment values to request the next page.
