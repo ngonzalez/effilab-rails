@@ -1,14 +1,27 @@
-class AdwordsApiImport < ApplicationJob
+class ImportWorker
   include Sidekiq::Worker
+
+  sidekiq_options :queue => :default, :retry => true, :backtrace => true
 
   # Basic Operations Samples
   # https://developers.google.com/adwords/api/docs/samples/ruby/basic-operations
 
   def perform
+    # AdwordsApi::Api will read a config file from ENV['HOME']/adwords_api.yml
+    # when called without parameters.
+    @adwords = AdwordsApi::Api.new
+
+    # To enable logging of SOAP requests, set the log_level value to 'DEBUG' in
+    # the configuration file or provide your own logger:
+    @adwords.logger = ActiveSupport::Logger.new(ENV['LOG_FILE_PATH'])
+
     get_campaigns
+
     Campaign.find_each do |campaign|
       get_ad_groups(campaign.id)
     end
+  rescue => exception
+    Rails.logger.error exception
   end
 
   def get_campaigns
@@ -50,8 +63,6 @@ class AdwordsApiImport < ApplicationJob
         offset += PAGE_SIZE
         selector[:paging][:start_index] = offset
       end
-    rescue => exception
-      @adwords.logger.error exception.inspect
     end while page[:total_num_entries] > offset
   end
 
@@ -93,8 +104,6 @@ class AdwordsApiImport < ApplicationJob
         offset += PAGE_SIZE
         selector[:paging][:start_index] = offset
       end
-    rescue => exception
-      @adwords.logger.error exception.inspect
     end while page[:total_num_entries] > offset
   end
 end
