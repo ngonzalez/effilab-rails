@@ -45,6 +45,8 @@ namespace :adwords_api do
     # the configuration file or provide your own logger:
     @adwords.logger = ActiveSupport::Logger.new(ENV['LOG_FILE_PATH'])
 
+    # Start Adwords API Sidekiq worker
+    AdwordsApiWorker.perform_later
   rescue => exception
     Rails.logger.error exception.inspect
   end
