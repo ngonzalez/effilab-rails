@@ -79,7 +79,7 @@ class AdwordsApiImport < ApplicationJob
       if page[:entries]
         page[:entries].each do |ad_group|
           ActiveRecord::Base.transaction do
-            Adgroup.new do |ag|
+            AdGroup.new do |ag|
               ag.adwords_id = ad_group[:id]
               ag.campaign_id = campaign_id
               ag.name = ad_group[:name]
