@@ -35,6 +35,10 @@ gem 'pg'
 # Rake is a Make-like program implemented in Ruby
 gem 'rake'
 
+# Sidekiq
+gem 'sidekiq'
+gem 'sinatra', require: nil
+
 # Google Adwords API
 gem 'signet', '0.12.0'
 gem 'google-adwords-api', '1.5.0'
