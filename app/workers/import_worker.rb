@@ -48,19 +48,18 @@ class ImportWorker
     begin
       page = campaign_srv.get(selector)
       if page[:entries]
-        page[:entries].each do |campaign|
+        page[:entries].each do |item|
           begin
             ActiveRecord::Base.transaction do
-              Campaign.new do |cp|
-                cp.adwords_id = campaign[:id]
-                cp.name = campaign[:name]
-                cp.status = campaign[:status]
-                cp.serving_status = campaign[:serving_status]
-                cp.start_date = campaign[:start_date]
-                cp.end_date = campaign[:end_date]
-                cp.save!
-                cp.create_conf!(data: JSON.dump(campaign[:settings]))
-              end
+              campaign = Campaign.find_by(adwords_id: item[:id]) || Campaign.new(adwords_id: item[:id])
+              campaign.name = item[:name]
+              campaign.status = item[:status]
+              campaign.serving_status = item[:serving_status]
+              campaign.start_date = item[:start_date]
+              campaign.end_date = item[:end_date]
+              campaign.save!
+              campaign.build_conf if !campaign.conf
+              campaign.conf.update!(data: JSON.dump(item[:settings]))
             end
           rescue => _exception
             Rails.logger.error _exception
@@ -104,17 +103,16 @@ class ImportWorker
     begin
       page = ad_group_srv.get(selector)
       if page[:entries]
-        page[:entries].each do |ad_group|
+        page[:entries].each do |item|
           begin
             ActiveRecord::Base.transaction do
-              AdGroup.new do |ag|
-                ag.adwords_id = ad_group[:id]
-                ag.campaign_id = campaign.id
-                ag.name = ad_group[:name]
-                ag.status = ad_group[:status]
-                ag.save!
-                ag.create_conf!(data: JSON.dump(ad_group[:settings]))
-              end
+              ad_group = AdGroup.find_by(adwords_id: item[:id]) || AdGroup.new(adwords_id: item[:id])
+              ad_group.campaign_id = campaign.id
+              ad_group.name = ad_group[:name]
+              ad_group.status = ad_group[:status]
+              ad_group.save!
+              ad_group.build_conf if !ad_group.conf
+              ad_group.conf.update!(data: JSON.dump(item[:settings]))
             end
           rescue => _exception
             Rails.logger.error _exception
