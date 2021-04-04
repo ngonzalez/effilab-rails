@@ -1,13 +1,15 @@
+require 'adwords_api'
+
 class ImportWorker
   include Sidekiq::Worker
 
   sidekiq_options :queue => :default, :retry => true, :backtrace => true
 
-  API_VERSION = :v201809
-  PAGE_SIZE = 500
-
   # Basic Operations Samples
   # https://developers.google.com/adwords/api/docs/samples/ruby/basic-operations
+
+  API_VERSION = :v201809
+  PAGE_SIZE = 500
 
   def perform
     # AdwordsApi::Api will read a config file from ENV['HOME']/adwords_api.yml

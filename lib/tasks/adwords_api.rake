@@ -34,7 +34,7 @@ namespace :adwords_api do
 
   desc 'Import Campaigns and AdGroups into database'
   task import: :environment do
-    ImportWorker.perform_later
+    ImportWorker.perform_async
   end
 
   desc 'Process AdWords data'
