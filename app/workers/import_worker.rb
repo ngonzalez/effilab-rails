@@ -15,10 +15,8 @@ class ImportWorker
     get_campaigns
 
     Campaign.find_each do |campaign|
-      get_ad_groups(campaign.id)
+      get_ad_groups(campaign)
     end
-  rescue => exception
-    Rails.logger.error exception
   end
 
   def get_campaigns
@@ -65,6 +63,7 @@ class ImportWorker
               end
             end
           rescue => _exception
+            Rails.logger.error _exception
             next
           end
         end
@@ -75,7 +74,7 @@ class ImportWorker
     end while page[:total_num_entries] > offset
   end
 
-  def get_ad_groups(campaign_id)
+  def get_ad_groups(campaign)
     # AdwordsApi::Api will read a config file from ENV['HOME']/adwords_api.yml
     # when called without parameters.
     adwords = AdwordsApi::Api.new
@@ -88,10 +87,10 @@ class ImportWorker
 
     # Get all the ad groups for this campaign.
     selector = {
-      :fields => ['Id', 'Name'],
+      :fields => ['Id', 'Name', 'CampaignId', 'Status', 'Settings'],
       :ordering => [{:field => 'Name', :sort_order => 'ASCENDING'}],
       :predicates => [
-        {:field => 'CampaignId', :operator => 'IN', :values => [campaign_id]}
+        {:field => 'CampaignId', :operator => 'IN', :values => [campaign.adwords_id]}
       ],
       :paging => {
         :start_index => 0,
@@ -110,7 +109,7 @@ class ImportWorker
             ActiveRecord::Base.transaction do
               AdGroup.new do |ag|
                 ag.adwords_id = ad_group[:id]
-                ag.campaign_id = campaign_id
+                ag.campaign_id = campaign.id
                 ag.name = ad_group[:name]
                 ag.status = ad_group[:status]
                 ag.save!
@@ -118,6 +117,7 @@ class ImportWorker
               end
             end
           rescue => _exception
+            Rails.logger.error _exception
             next
           end
         end

@@ -23,10 +23,8 @@ namespace :adwords_api do
       verification_code
     end
     if verification_code && token
-      puts 'Updating adwords_api.yml with OAuth credentials.'
       @adwords.save_oauth2_token(token)
-      puts 'OAuth2 token is now saved and will be automatically used by the library.'
-      puts 'Please restart the script now.'
+      puts 'Authentication token is now saved and will be automatically used by the application'
     end
   rescue => exception
     Rails.logger.error exception
@@ -37,7 +35,7 @@ namespace :adwords_api do
     begin
       ImportWorker.perform_async
     rescue AdsCommon::Errors::OAuth2VerificationRequired => _exception
-      Rails.logger.info "Please authenticate with rake adwords_api:setup"
+      puts "Please authenticate with rake adwords_api:setup"
     end
   end
 
@@ -46,7 +44,7 @@ namespace :adwords_api do
     stats = {nb_ad_groups: 0, nb_campaigns: Campaign.count}
 
     Campaign.find_each do |campaign|
-      nb_adg = campaign.adgroups.count
+      nb_adg = campaign.ad_groups.count
       stats[:nb_ad_groups] += nb_adg
 
       Rails.logger.info "Campaign: %{id} \"%{name}\" [%{status}] AdGroups:%{nb_adg}" % {
@@ -56,11 +54,11 @@ namespace :adwords_api do
         nb_adg: nb_adg,
       }
 
-      campaign.adgroups.each do |adgroup|
+      campaign.ad_groups.each do |ad_group|
         Rails.logger.info "Adgroup: %{id} \"%{name}\" [%{status}]" % {
-          id: adgroup.adwords_id,
-          name: adgroup.name,
-          status: adgroup.status,
+          id: ad_group.adwords_id,
+          name: ad_group.name,
+          status: ad_group.status,
         }
       end
     end
