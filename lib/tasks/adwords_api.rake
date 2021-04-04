@@ -17,7 +17,7 @@ namespace :adwords_api do
     token = @adwords.authorize() do |auth_url|
       puts "Hit Auth error, please navigate to URL:\n\t%s" % auth_url
       print 'log in and type the verification code: '
-      verification_code = gets.chomp
+      verification_code = STDIN.gets.chomp
       verification_code
     end
     if verification_code && token
