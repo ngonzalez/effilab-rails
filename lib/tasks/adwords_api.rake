@@ -32,11 +32,7 @@ namespace :adwords_api do
 
   desc 'Import Campaigns and AdGroups into database'
   task import: :environment do
-    begin
-      ImportWorker.perform_async
-    rescue AdsCommon::Errors::OAuth2VerificationRequired => _exception
-      puts "Please authenticate with rake adwords_api:setup"
-    end
+    ImportWorker.perform_async
   end
 
   desc 'Process AdWords data'
