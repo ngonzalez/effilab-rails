@@ -32,6 +32,11 @@ gem 'dotenv-rails'
 # Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/].
 gem 'pg'
 
+# redis
+gem 'redis'
+gem 'redis-rails'
+gem 'redis-rack-cache'
+
 # Rake is a Make-like program implemented in Ruby
 gem 'rake'
 
