@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(version: 2021_04_04_090914) do
   enable_extension "plpgsql"
 
   create_table "ad_groups", force: :cascade do |t|
-    t.text "campaign_id"
+    t.integer "campaign_id"
     t.text "adwords_id"
+    t.text "adwords_campaign_id"
     t.text "name"
     t.text "status"
     t.datetime "created_at"

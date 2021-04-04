@@ -1,0 +1,772 @@
+---
+:total_num_entries: 64
+:page_type: CampaignPage
+:entries:
+- :id: 443327128
+  :name: 1.01 - Nom
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443327248
+  :name: 1.02 - Garage
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443327368
+  :name: 1.03 - Garage - Spécialités
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443327488
+  :name: 1.04 - Géotext Ville - Garage
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443327608
+  :name: 1.05 - Géotext Ville - Garage - Marques
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443327728
+  :name: 1.06 - Géotext Cp - Garage
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443327848
+  :name: 1.07 - Géotext Cp - Garage - Marques
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443327968
+  :name: 2.01 - Problèmes
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443328088
+  :name: 3.01 - Véhicules - Garage
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443328328
+  :name: 3.02 - Véhicules - Révision
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443328448
+  :name: 3.03 - Véhicules - Entretien
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443328568
+  :name: 3.04 - Véhicules - Problèmes
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443328688
+  :name: 3.05 - Véhicules - Réparation
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443328808
+  :name: 3.06 - Véhicules - Changer Piece
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443328928
+  :name: 3.07 - Véhicules - Pneus
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443329168
+  :name: 3.08 - Véhicules - Peinture
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443329288
+  :name: 3.09 - Véhicules - Carrosserie
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443329408
+  :name: 4.01 - Elements - Changer
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443329528
+  :name: 4.02 - Elements - Reparation
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443329768
+  :name: 4.03 - Elements Interieur - Changer
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443330008
+  :name: 4.04 - Elements Interieur - Reparation
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443330128
+  :name: 5.01 - Elements - Changer - Devis
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443330488
+  :name: 5.02 - Elements - Reparation - Devis
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443330608
+  :name: 5.03 - Elements Interieur - Changer - Devis
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443330848
+  :name: 5.04 - Elements Interieur - Reparation - Devis
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331088
+  :name: 6.01 - Elements Autres - Carrosserie
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331208
+  :name: 6.02 - Elements Autres - Carrosserie - Voiture
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331328
+  :name: 6.03 - Elements Autres - Peinture
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331448
+  :name: 6.04 - Elements Autres - Peinture - Voiture
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331568
+  :name: 6.05 - Elements Autres - Pare Brise
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331688
+  :name: 6.06 - Elements Autres - Pneus
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331808
+  :name: 7.01 - Cyclomoteurs - Garage
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443331928
+  :name: 7.02 - Cyclomoteurs - Géotext Cp - Garage
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443332168
+  :name: 7.03 - Cyclomoteurs - Géotext Ville - Garage
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443332288
+  :name: 7.04 - Cyclomoteurs - Révision
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443332408
+  :name: 7.05 - Cyclomoteurs - Entretien
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443332528
+  :name: 7.06 - Cyclomoteurs - Problème
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443332648
+  :name: 7.07 - Cyclomoteurs - Réparation
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443332888
+  :name: 7.08 - Cyclomoteurs - Pneus
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443333248
+  :name: 7.09 - Cyclomoteurs - Changer Piece
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443333368
+  :name: 7.10 - Cyclomoteurs - Peinture
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443333488
+  :name: 7.11 - Cyclomoteurs - Carrosserie
+  :status: PAUSED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443333608
+  :name: 8.01 - Marques Auto - Garage
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443333728
+  :name: 8.02 - Marques Auto - Revision
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443333968
+  :name: 8.03 - Marques Auto - Problème
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443334088
+  :name: 8.04 - Marques Auto - Reparation
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443334208
+  :name: 8.05 - Marques Auto - Géotext Cp
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443335888
+  :name: 8.06 - Marques Auto - Géotext Ville
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443336128
+  :name: 8.07 - Marques Auto - Pneus
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443336368
+  :name: 8.08 - Marques Auto - Pneus Hiver
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443336488
+  :name: 8.09 - Marques Auto - Pneus Neige
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443336608
+  :name: 8.10 - Marques Auto - Jantes
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443336728
+  :name: 8.11 - Marques Auto - Roues
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443336848
+  :name: 8.12 - Marques Auto - Carrosserie
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443336968
+  :name: 9.01 - Modèles Auto - Revision
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337088
+  :name: 9.02 - Modèles Auto - Problème
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337208
+  :name: 9.03 - Modèles Auto - Reparation
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337328
+  :name: 9.04 - Modèles Auto - Pneus
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337448
+  :name: 9.05 - Modèles Auto - Pneus Hiver
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337568
+  :name: 9.06 - Modèles Auto - Pneus Neige
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337688
+  :name: 9.07 - Modèles Auto - Jantes
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337808
+  :name: 9.08 - Modèles Auto - Roues
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 443337928
+  :name: 9.09 - Modèles Auto - Carrosserie
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20160118'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting
+- :id: 868628106
+  :name: 'Test Campaign with #PAC inside'
+  :status: ENABLED
+  :serving_status: SUSPENDED
+  :start_date: '20170626'
+  :end_date: '20371230'
+  :budget: ''
+  :settings:
+  - :setting_type: GeoTargetTypeSetting
+    :positive_geo_target_type: DONT_CARE
+    :negative_geo_target_type: DONT_CARE
+    :xsi_type: GeoTargetTypeSetting

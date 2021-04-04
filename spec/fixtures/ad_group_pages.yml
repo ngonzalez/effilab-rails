@@ -1,0 +1,404 @@
+---
+:total_num_entries: 100
+:page_type: AdGroupPage
+:entries:
+- :id: 32939036008
+  :campaign_id: 443336848
+  :name: Alfa Romeo - carrosserie
+  :status: ENABLED
+- :id: 32939042008
+  :campaign_id: 443336848
+  :name: Alfa Romeo - peinture
+  :status: ENABLED
+- :id: 32939036128
+  :campaign_id: 443336848
+  :name: Audi - carrosserie
+  :status: ENABLED
+- :id: 32939042128
+  :campaign_id: 443336848
+  :name: Audi - peinture
+  :status: ENABLED
+- :id: 32939036248
+  :campaign_id: 443336848
+  :name: BMW - carrosserie
+  :status: ENABLED
+- :id: 32939042248
+  :campaign_id: 443336848
+  :name: BMW - peinture
+  :status: ENABLED
+- :id: 32939036368
+  :campaign_id: 443336848
+  :name: Buick - carrosserie
+  :status: ENABLED
+- :id: 32939042368
+  :campaign_id: 443336848
+  :name: Buick - peinture
+  :status: ENABLED
+- :id: 32939036488
+  :campaign_id: 443336848
+  :name: Cadillac - carrosserie
+  :status: ENABLED
+- :id: 32939042488
+  :campaign_id: 443336848
+  :name: Cadillac - peinture
+  :status: ENABLED
+- :id: 32939036608
+  :campaign_id: 443336848
+  :name: Chevrolet - carrosserie
+  :status: ENABLED
+- :id: 32939042608
+  :campaign_id: 443336848
+  :name: Chevrolet - peinture
+  :status: ENABLED
+- :id: 32939036728
+  :campaign_id: 443336848
+  :name: Chrysler - carrosserie
+  :status: ENABLED
+- :id: 32939042728
+  :campaign_id: 443336848
+  :name: Chrysler - peinture
+  :status: ENABLED
+- :id: 32939036848
+  :campaign_id: 443336848
+  :name: Citroën - carrosserie
+  :status: ENABLED
+- :id: 32939042848
+  :campaign_id: 443336848
+  :name: Citroën - peinture
+  :status: ENABLED
+- :id: 32939036968
+  :campaign_id: 443336848
+  :name: Corvette - carrosserie
+  :status: ENABLED
+- :id: 32939042968
+  :campaign_id: 443336848
+  :name: Corvette - peinture
+  :status: ENABLED
+- :id: 32939037088
+  :campaign_id: 443336848
+  :name: DACIA - carrosserie
+  :status: ENABLED
+- :id: 32939043088
+  :campaign_id: 443336848
+  :name: DACIA - peinture
+  :status: ENABLED
+- :id: 32939037208
+  :campaign_id: 443336848
+  :name: Daewoo - carrosserie
+  :status: ENABLED
+- :id: 32939043208
+  :campaign_id: 443336848
+  :name: Daewoo - peinture
+  :status: ENABLED
+- :id: 32939037328
+  :campaign_id: 443336848
+  :name: Daihatsu - carrosserie
+  :status: ENABLED
+- :id: 32939043328
+  :campaign_id: 443336848
+  :name: Daihatsu - peinture
+  :status: ENABLED
+- :id: 32939037448
+  :campaign_id: 443336848
+  :name: Daimler - carrosserie
+  :status: ENABLED
+- :id: 32939043448
+  :campaign_id: 443336848
+  :name: Daimler - peinture
+  :status: ENABLED
+- :id: 32939037568
+  :campaign_id: 443336848
+  :name: Dodge - carrosserie
+  :status: ENABLED
+- :id: 32939043568
+  :campaign_id: 443336848
+  :name: Dodge - peinture
+  :status: ENABLED
+- :id: 32939037688
+  :campaign_id: 443336848
+  :name: Fiat - carrosserie
+  :status: ENABLED
+- :id: 32939043688
+  :campaign_id: 443336848
+  :name: Fiat - peinture
+  :status: ENABLED
+- :id: 32939037808
+  :campaign_id: 443336848
+  :name: Ford - carrosserie
+  :status: ENABLED
+- :id: 32939043808
+  :campaign_id: 443336848
+  :name: Ford - peinture
+  :status: ENABLED
+- :id: 32939037928
+  :campaign_id: 443336848
+  :name: Honda - carrosserie
+  :status: ENABLED
+- :id: 32939043928
+  :campaign_id: 443336848
+  :name: Honda - peinture
+  :status: ENABLED
+- :id: 32939038048
+  :campaign_id: 443336848
+  :name: Hummer - carrosserie
+  :status: ENABLED
+- :id: 32939044048
+  :campaign_id: 443336848
+  :name: Hummer - peinture
+  :status: ENABLED
+- :id: 32939038168
+  :campaign_id: 443336848
+  :name: Hyundai - carrosserie
+  :status: ENABLED
+- :id: 32939044168
+  :campaign_id: 443336848
+  :name: Hyundai - peinture
+  :status: ENABLED
+- :id: 32939038288
+  :campaign_id: 443336848
+  :name: Infiniti - carrosserie
+  :status: ENABLED
+- :id: 32939044288
+  :campaign_id: 443336848
+  :name: Infiniti - peinture
+  :status: ENABLED
+- :id: 32939038408
+  :campaign_id: 443336848
+  :name: Isuzu - carrosserie
+  :status: ENABLED
+- :id: 32939044408
+  :campaign_id: 443336848
+  :name: Isuzu - peinture
+  :status: ENABLED
+- :id: 32939038528
+  :campaign_id: 443336848
+  :name: Jaguar - carrosserie
+  :status: ENABLED
+- :id: 32939044528
+  :campaign_id: 443336848
+  :name: Jaguar - peinture
+  :status: ENABLED
+- :id: 32939038648
+  :campaign_id: 443336848
+  :name: Jeep - carrosserie
+  :status: ENABLED
+- :id: 32939044648
+  :campaign_id: 443336848
+  :name: Jeep - peinture
+  :status: ENABLED
+- :id: 32939038768
+  :campaign_id: 443336848
+  :name: KIA - carrosserie
+  :status: ENABLED
+- :id: 32939044768
+  :campaign_id: 443336848
+  :name: KIA - peinture
+  :status: ENABLED
+- :id: 32939038888
+  :campaign_id: 443336848
+  :name: Lada - carrosserie
+  :status: ENABLED
+- :id: 32939044888
+  :campaign_id: 443336848
+  :name: Lada - peinture
+  :status: ENABLED
+- :id: 32939039008
+  :campaign_id: 443336848
+  :name: Lancia - carrosserie
+  :status: ENABLED
+- :id: 32939045008
+  :campaign_id: 443336848
+  :name: Lancia - peinture
+  :status: ENABLED
+- :id: 32939039128
+  :campaign_id: 443336848
+  :name: Land Rover - carrosserie
+  :status: ENABLED
+- :id: 32939045128
+  :campaign_id: 443336848
+  :name: Land Rover - peinture
+  :status: ENABLED
+- :id: 32939039248
+  :campaign_id: 443336848
+  :name: Lexus - carrosserie
+  :status: ENABLED
+- :id: 32939045248
+  :campaign_id: 443336848
+  :name: Lexus - peinture
+  :status: ENABLED
+- :id: 32939039368
+  :campaign_id: 443336848
+  :name: Lotus - carrosserie
+  :status: ENABLED
+- :id: 32939045368
+  :campaign_id: 443336848
+  :name: Lotus - peinture
+  :status: ENABLED
+- :id: 32939039488
+  :campaign_id: 443336848
+  :name: Mazda - carrosserie
+  :status: ENABLED
+- :id: 32939045488
+  :campaign_id: 443336848
+  :name: Mazda - peinture
+  :status: ENABLED
+- :id: 32939039608
+  :campaign_id: 443336848
+  :name: Mercedes - carrosserie
+  :status: ENABLED
+- :id: 32939045608
+  :campaign_id: 443336848
+  :name: Mercedes - peinture
+  :status: ENABLED
+- :id: 32939039728
+  :campaign_id: 443336848
+  :name: MINI - carrosserie
+  :status: ENABLED
+- :id: 32939045728
+  :campaign_id: 443336848
+  :name: MINI - peinture
+  :status: ENABLED
+- :id: 32939039848
+  :campaign_id: 443336848
+  :name: Mitsubishi - carrosserie
+  :status: ENABLED
+- :id: 32939045848
+  :campaign_id: 443336848
+  :name: Mitsubishi - peinture
+  :status: ENABLED
+- :id: 32939039968
+  :campaign_id: 443336848
+  :name: Nissan - carrosserie
+  :status: ENABLED
+- :id: 32939046088
+  :campaign_id: 443336848
+  :name: Nissan - peinture
+  :status: ENABLED
+- :id: 32939040088
+  :campaign_id: 443336848
+  :name: Opel - carrosserie
+  :status: ENABLED
+- :id: 32939046208
+  :campaign_id: 443336848
+  :name: Opel - peinture
+  :status: ENABLED
+- :id: 32939040208
+  :campaign_id: 443336848
+  :name: Peugeot - carrosserie
+  :status: ENABLED
+- :id: 32939046328
+  :campaign_id: 443336848
+  :name: Peugeot - peinture
+  :status: ENABLED
+- :id: 32939040328
+  :campaign_id: 443336848
+  :name: Pontiac - carrosserie
+  :status: ENABLED
+- :id: 32939046448
+  :campaign_id: 443336848
+  :name: Pontiac - peinture
+  :status: ENABLED
+- :id: 32939040448
+  :campaign_id: 443336848
+  :name: Porsche - carrosserie
+  :status: ENABLED
+- :id: 32939046568
+  :campaign_id: 443336848
+  :name: Porsche - peinture
+  :status: ENABLED
+- :id: 32939040568
+  :campaign_id: 443336848
+  :name: Renault - carrosserie
+  :status: ENABLED
+- :id: 32939046688
+  :campaign_id: 443336848
+  :name: Renault - peinture
+  :status: ENABLED
+- :id: 32939040688
+  :campaign_id: 443336848
+  :name: Rover - carrosserie
+  :status: ENABLED
+- :id: 32939046808
+  :campaign_id: 443336848
+  :name: Rover - peinture
+  :status: ENABLED
+- :id: 32939040808
+  :campaign_id: 443336848
+  :name: SAAB - carrosserie
+  :status: ENABLED
+- :id: 32939046928
+  :campaign_id: 443336848
+  :name: SAAB - peinture
+  :status: ENABLED
+- :id: 32939040928
+  :campaign_id: 443336848
+  :name: SEAT - carrosserie
+  :status: ENABLED
+- :id: 32939047048
+  :campaign_id: 443336848
+  :name: SEAT - peinture
+  :status: ENABLED
+- :id: 32939041048
+  :campaign_id: 443336848
+  :name: Skoda - carrosserie
+  :status: ENABLED
+- :id: 32939047168
+  :campaign_id: 443336848
+  :name: Skoda - peinture
+  :status: ENABLED
+- :id: 32939041168
+  :campaign_id: 443336848
+  :name: smart - carrosserie
+  :status: ENABLED
+- :id: 32939047288
+  :campaign_id: 443336848
+  :name: smart - peinture
+  :status: ENABLED
+- :id: 32939041288
+  :campaign_id: 443336848
+  :name: Ssangyong - carrosserie
+  :status: ENABLED
+- :id: 32939047408
+  :campaign_id: 443336848
+  :name: Ssangyong - peinture
+  :status: ENABLED
+- :id: 32939041408
+  :campaign_id: 443336848
+  :name: Subaru - carrosserie
+  :status: ENABLED
+- :id: 32939047528
+  :campaign_id: 443336848
+  :name: Subaru - peinture
+  :status: ENABLED
+- :id: 32939041528
+  :campaign_id: 443336848
+  :name: Suzuki - carrosserie
+  :status: ENABLED
+- :id: 32939047648
+  :campaign_id: 443336848
+  :name: Suzuki - peinture
+  :status: ENABLED
+- :id: 32939041648
+  :campaign_id: 443336848
+  :name: Toyota - carrosserie
+  :status: ENABLED
+- :id: 32939047768
+  :campaign_id: 443336848
+  :name: Toyota - peinture
+  :status: ENABLED
+- :id: 32939041768
+  :campaign_id: 443336848
+  :name: Volkswagen - carrosserie
+  :status: ENABLED
+- :id: 32939047888
+  :campaign_id: 443336848
+  :name: Volkswagen - peinture
+  :status: ENABLED
+- :id: 32939041888
+  :campaign_id: 443336848
+  :name: Volvo - carrosserie
+  :status: ENABLED
+- :id: 32939048008
+  :campaign_id: 443336848
+  :name: Volvo - peinture
+  :status: ENABLED

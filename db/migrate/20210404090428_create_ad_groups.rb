@@ -1,8 +1,9 @@
 class CreateAdGroups < ActiveRecord::Migration[6.1]
   def change
     create_table :ad_groups do |t|
-      t.text :campaign_id
+      t.integer :campaign_id
       t.text :adwords_id
+      t.text :adwords_campaign_id
       t.text :name
       t.text :status
       t.datetime :created_at

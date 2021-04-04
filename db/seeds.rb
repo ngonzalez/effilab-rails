@@ -53,26 +53,30 @@ Campaign.find_by(adwords_id: '443331208').create_conf!(data: JSON.dump([{"settin
 AdGroup.where(adwords_id: ['32939048008', '32939048009', '32939048010', '32939048011']).destroy_all
 AdGroup.create([
   {
-    campaign_id: Campaign.find_by(adwords_id: '443331208').id,
+    campaign_id: Campaign.find_by(adwords_id: '868628106').id,
     adwords_id: '32939048008',
+    adwords_campaign_id: '868628106',
     name: 'Volvo - peinture',
     status: 'ENABLED',
   },
   {
-    campaign_id: Campaign.find_by(adwords_id: '443327848').id,
+    campaign_id: Campaign.find_by(adwords_id: '868628106').id,
     adwords_id: '32939048009',
+    adwords_campaign_id: '868628106',
     name: 'BMW - vidange',
     status: 'ENABLED',
   },
   {
-    campaign_id: Campaign.find_by(adwords_id: '443332168').id,
+    campaign_id: Campaign.find_by(adwords_id: '868628106').id,
     adwords_id: '32939048010',
+    adwords_campaign_id: '868628106',
     name: 'Ssangyong - CP',
     status: 'ENABLED',
   },
   {
-    campaign_id: Campaign.find_by(adwords_id: '443331208').id,
+    campaign_id: Campaign.find_by(adwords_id: '868628106').id,
     adwords_id: '32939048011',
+    adwords_campaign_id: '868628106',
     name: 'VVolkswagen - carrosserie',
     status: 'ENABLED',
   },

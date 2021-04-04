@@ -107,8 +107,9 @@ class ImportWorker
             ActiveRecord::Base.transaction do
               ad_group = AdGroup.find_by(adwords_id: item[:id]) || AdGroup.new(adwords_id: item[:id])
               ad_group.campaign_id = campaign.id
-              ad_group.name = ad_group[:name]
-              ad_group.status = ad_group[:status]
+              ad_group.adwords_campaign_id = item[:campaign_id]
+              ad_group.name = item[:name]
+              ad_group.status = item[:status]
               ad_group.save!
               ad_group.build_conf if !ad_group.conf
               ad_group.conf.update!(data: JSON.dump(item[:settings]))
