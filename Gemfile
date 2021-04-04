@@ -26,11 +26,14 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# .env
+# Autoload dotenv in Rails.
 gem 'dotenv-rails'
 
-# PostgreSQL
+# Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/].
 gem 'pg'
+
+# Rake is a Make-like program implemented in Ruby
+gem 'rake'
 
 # Google Adwords API
 gem 'signet', '0.12.0'
