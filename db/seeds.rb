@@ -5,7 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Campaign.create!([
+
+Campaign.where(adwords_id: ['868628106', '443327848', '443332168', '443331208']).destroy_all
+Campaign.create([
   {
     adwords_id: '868628106',
     name: 'Test Campaign with #PAC inside',
@@ -40,30 +42,16 @@ Campaign.create!([
   },
 ])
 
-Config.create!([
-  {
-    record_id: Campaign.find_by(adwords_id: '443331208').id,
-    record_type: Campaign.find_by(adwords_id: '443331208').name,
-    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
-  },
-  {
-    record_id: Campaign.find_by(adwords_id: '443327848').id,
-    record_type: Campaign.find_by(adwords_id: '443327848').name,
-    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
-  },
-  {
-    record_id: Campaign.find_by(adwords_id: '443332168').id,
-    record_type: Campaign.find_by(adwords_id: '443332168').name,
-    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
-  },
-  {
-    record_id: Campaign.find_by(adwords_id: '443331208').id,
-    record_type: Campaign.find_by(adwords_id: '443331208').name,
-    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
-  },
-])
+Campaign.find_by(adwords_id: '868628106').create_conf!(data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]))
 
-AdGroup.create!([
+Campaign.find_by(adwords_id: '443327848').create_conf!(data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]))
+
+Campaign.find_by(adwords_id: '443332168').create_conf!(data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]))
+
+Campaign.find_by(adwords_id: '443331208').create_conf!(data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]))
+
+AdGroup.where(adwords_id: ['32939048008', '32939048009', '32939048010', '32939048011']).destroy_all
+AdGroup.create([
   {
     campaign_id: Campaign.find_by(adwords_id: '443331208').id,
     adwords_id: '32939048008',
@@ -72,19 +60,19 @@ AdGroup.create!([
   },
   {
     campaign_id: Campaign.find_by(adwords_id: '443327848').id,
-    adwords_id: '32939048008',
+    adwords_id: '32939048009',
     name: 'BMW - vidange',
     status: 'ENABLED',
   },
   {
     campaign_id: Campaign.find_by(adwords_id: '443332168').id,
-    adwords_id: '32939048008',
+    adwords_id: '32939048010',
     name: 'Ssangyong - CP',
     status: 'ENABLED',
   },
   {
     campaign_id: Campaign.find_by(adwords_id: '443331208').id,
-    adwords_id: '32939048008',
+    adwords_id: '32939048011',
     name: 'VVolkswagen - carrosserie',
     status: 'ENABLED',
   },
