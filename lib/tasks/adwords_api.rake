@@ -1,9 +1,6 @@
 require "adwords_api"
 require "oauth2"
 
-API_VERSION = :v201809
-PAGE_SIZE = 500
-
 namespace :adwords_api do
   desc 'Setup Adwords API configuration file'
   task setup: :environment do

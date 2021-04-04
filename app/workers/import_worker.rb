@@ -3,6 +3,9 @@ class ImportWorker
 
   sidekiq_options :queue => :default, :retry => true, :backtrace => true
 
+  API_VERSION = :v201809
+  PAGE_SIZE = 500
+
   # Basic Operations Samples
   # https://developers.google.com/adwords/api/docs/samples/ruby/basic-operations
 
