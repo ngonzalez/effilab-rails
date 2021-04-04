@@ -11,23 +11,30 @@ class ImportWorker
   API_VERSION = :v201809
   PAGE_SIZE = 500
 
+  attr_accessor :adwords
+
   def perform
+    set_adwords
     get_campaigns
 
     Campaign.find_each do |campaign|
       get_ad_groups(campaign)
     end
+  rescue AdsCommon::Errors::OAuth2VerificationRequired => exception
+    Rails.logger.error exception
   end
 
-  def get_campaigns
+  def set_adwords
     # AdwordsApi::Api will read a config file from ENV['HOME']/adwords_api.yml
     # when called without parameters.
-    adwords = AdwordsApi::Api.new
+    @adwords = AdwordsApi::Api.new
 
     # To enable logging of SOAP requests, set the log_level value to 'DEBUG' in
     # the configuration file or provide your own logger:
     adwords.logger = ActiveSupport::Logger.new(ENV['LOG_FILE_PATH'])
+  end
 
+  def get_campaigns
     campaign_srv = adwords.service(:CampaignService, API_VERSION)
 
     # Get all the campaigns for this account.
@@ -74,14 +81,6 @@ class ImportWorker
   end
 
   def get_ad_groups(campaign)
-    # AdwordsApi::Api will read a config file from ENV['HOME']/adwords_api.yml
-    # when called without parameters.
-    adwords = AdwordsApi::Api.new
-
-    # To enable logging of SOAP requests, set the log_level value to 'DEBUG' in
-    # the configuration file or provide your own logger:
-    adwords.logger = ActiveSupport::Logger.new(ENV['LOG_FILE_PATH'])
-
     ad_group_srv = adwords.service(:AdGroupService, API_VERSION)
 
     # Get all the ad groups for this campaign.
