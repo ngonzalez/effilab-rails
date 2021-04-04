@@ -1,6 +1,9 @@
 require "adwords_api"
 require "oauth2"
 
+API_VERSION = :v201809
+PAGE_SIZE = 500
+
 namespace :adwords_api do
   desc 'Setup Adwords API configuration file'
   task setup: :environment do
@@ -28,8 +31,10 @@ namespace :adwords_api do
     end
   end
 
-  desc 'Load Campaigns and AdGroups into database'
-  task load: :environment do
+  desc 'Import Campaigns and AdGroups into database'
+  task import: :environment do
+    # Basic Operations Samples
+    # https://developers.google.com/adwords/api/docs/samples/ruby/basic-operations
     @adwords = AdwordsApi::Api.new
 
     # To enable logging of SOAP requests, set the log_level value to 'DEBUG' in
@@ -75,7 +80,7 @@ namespace :adwords_api do
           selector[:paging][:start_index] = offset
         end
       rescue => exception
-        @adwords.logger exception.inspect
+        @adwords.logger.error exception.inspect
       end while page[:total_num_entries] > offset
     end
 
@@ -118,14 +123,14 @@ namespace :adwords_api do
           selector[:paging][:start_index] = offset
         end
       rescue => exception
-        @adwords.logger exception.inspect
+        @adwords.logger.error exception.inspect
       end while page[:total_num_entries] > offset
     end
 
     get_campaigns
 
-    Campaign.all.each do |campaign|
-      get_ad_groups(campaign.adwords_id)
+    Campaign.find_each do |campaign|
+      get_ad_groups(campaign.id)
     end
   end
 
