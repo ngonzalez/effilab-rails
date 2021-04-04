@@ -40,6 +40,29 @@ Campaign.create!([
   },
 ])
 
+Config.create!([
+  {
+    record_id: Campaign.find_by(adwords_id: '443331208').id,
+    record_type: Campaign.find_by(adwords_id: '443331208').name,
+    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
+  },
+  {
+    record_id: Campaign.find_by(adwords_id: '443327848').id,
+    record_type: Campaign.find_by(adwords_id: '443327848').name,
+    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
+  },
+  {
+    record_id: Campaign.find_by(adwords_id: '443332168').id,
+    record_type: Campaign.find_by(adwords_id: '443332168').name,
+    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
+  },
+  {
+    record_id: Campaign.find_by(adwords_id: '443331208').id,
+    record_type: Campaign.find_by(adwords_id: '443331208').name,
+    data: JSON.dump([{"setting_type"=>"GeoTargetTypeSetting", "positive_geo_target_type"=>"DONT_CARE", "negative_geo_target_type"=>"DONT_CARE", "xsi_type"=>"GeoTargetTypeSetting"}]),
+  },
+])
+
 AdGroup.create!([
   {
     campaign_id: Campaign.find_by(adwords_id: '443331208').id,
